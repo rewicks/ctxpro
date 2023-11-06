@@ -53,6 +53,9 @@ def parse_args():
     score_parser.add_argument("--pretty", '-p', default=False,
                                             action="store_true",
                                             help="Adds some lines and formatting for easier human comprehension. Also implies --complete")
+    # Set the verbosity level for logging
+    score_parser.add_argument("--verbosity", '-V', default="all", choices=["all", "debug", "quiet"], help="Verbosity level.")
+
 
 
     # Arguments for the extraction functionality
@@ -83,6 +86,9 @@ def parse_args():
     extract_parser.add_argument("--target", "-T", default=False, 
                                                 action="store_true",
                                                 help="If true, extracts target preceding context instead.")
+    # Set the verbosity level for logging
+    extract_parser.add_argument("--verbosity", '-V', default="all", choices=["all", "debug", "quiet"], help="Verbosity level.")
+
 
 
     # Arguments for the identification functionality
@@ -107,6 +113,8 @@ def parse_args():
     identify_parser.add_argument("--cpu", '-c', default=False,
                                                 action="store_true",
                                                 help="Run on CPU (default: GPU)")
+    # Set the verbosity level for logging
+    identify_parser.add_argument("--verbosity", '-V', default="all", choices=["all", "debug", "quiet"], help="Verbosity level.")
 
 
     # Arguments for listing rule sets or available evaluation sets.
@@ -134,11 +142,6 @@ def parse_args():
                                         default=None,
                                         choices=["dev", "devtest", "test"],
                                         help="The split of test sets to list.")
-
-    # Set the verbosity level for logging
-    parser.add_argument("--verbosity", '-V', default="all", choices=["all", "debug", "quiet"], help="Verbosity level.")
-
-
     args = parser.parse_args()
 
     return args

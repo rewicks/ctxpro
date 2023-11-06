@@ -99,14 +99,17 @@ def get_context(documents, docid, segment_id, max_tokens, max_sentences, spm=Non
 def extract(args):
     """
     Extracts the context for each annotated example.
-    Adjoins them with a connecting string.
+    Joins them with a connecting string.
     """
     spm = None
     if args.spm is not None:
-        import sentencepiece as sp
+        try:
+            import sentencepiece as sp
+        except ImportError:
+            raise ValueError("SentencePiece model specified but sentencepiece not installed.")
         spm = sp.SentencePieceProcessor(model_file=args.spm)
 
-    annotation = get_test_data(args.annotations)
+    annotation = get_test_data(args.eval_set)
     ostream = get_ostream(args.output)
     documents = get_documents(args.input_files, target=args.target)
 
@@ -117,7 +120,7 @@ def extract(args):
 
         contexts = get_context(documents, document_id, segment_id, args.max_tokens, args.max_sentences, spm)
 
-        print(args.adjoining_string.join(contexts), file=ostream)
+        print(args.joining_string.join(contexts), file=ostream)
 
 
 def main(args):

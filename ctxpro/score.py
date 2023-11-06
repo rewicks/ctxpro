@@ -26,7 +26,7 @@ import string
 
 from sentence_splitter import SentenceSplitter
 
-from .datasets import get_test_data, list_test_sets
+from .evalsets import get_test_data, list_test_sets
 
 ################################ FUNCTIONS ###############################
 
@@ -73,7 +73,7 @@ def score(args):
     """
     splitter = SentenceSplitter(language=args.lang)
 
-    references = get_test_data(args.test_set)
+    references = get_test_data(args.eval_set)
     translations = get_translation_stream(args.translations)
 
     score_rules = {}

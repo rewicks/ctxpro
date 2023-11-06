@@ -38,7 +38,7 @@ To extract contexts from a specific evaluation set, you may use the following co
 
 ```
 # Extract maximum 5 sentences or 128 tokens
-ctxpro -i data/opensubs/de-en/de-en.tsv -e en-de/gender/test -s 5 -t 128 --joining_string "<eos> "
+ctxpro extract -i data/opensubs/de-en/de-en.tsv -e en-de/gender/test -s 5 -t 128 --joining_string "<eos> "
 ```
 
 ### Setting up OpenSubtitles
@@ -47,6 +47,8 @@ You have to setup OpenSubtitles for the language you care about. This includes d
 
     cd data/opensubs
     ./setup.sh de-en
+
+Note that OpenSubtitles does the language-pair in alphabetical order, so the language pairs we support are `de-en`, `en-es`, `en-fr`, `en-it`, `en-pl`, `en-pt`, and `en-ru`. We assume an English source, so you may have to reverse the source and target columns in `de-en.tsv` (i.e. with something like `awk -F'\t' '{print $1 $3 $2}'`)
 
 # Identify New Examples
 

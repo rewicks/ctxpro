@@ -127,7 +127,7 @@ def install_ctxpro(**kwargs):
         # for example:
         # $ pip install -e .[dev,test]
         extras_require = {
-            "annotate": [
+            "identify": [
                 "spacy>=3.5.0,<4",
                 "fastcoref>=2.1.6",
                 "simalign>=0.3",

@@ -42,11 +42,11 @@ fi
 for srcfile in */*.$src; do 
     name=$langpair"/"$(echo $srcfile | sed "s/\.$src\$//g")
     trgfile=$(echo $srcfile | perl -pe "s/\.$src\$/.$trg/")
-    paste $srcfile $trgfile | $dirname/../../scripts/broadcast -i 0 $name 
+    paste $srcfile $trgfile | $basedir/../../scripts/broadcast -i 0 $name 
 done > $langpair.tsv
 
 # cleanup
-#rm -f OpenSubtitles*
-#rm -f doc.order.$langpair.txt
+rm -f OpenSubtitles*
+rm -f doc.order.$langpair.txt
 rm -f README
 rm -f $langpair.txt.zip
