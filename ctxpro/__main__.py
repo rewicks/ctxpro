@@ -78,8 +78,11 @@ def parse_args():
                                                 type=str,
                                                 help="The string to use to join sentences together. Defaults to a space.")
     extract_parser.add_argument("--output", "-o", default=None,
-                                            type=str,
-                                            help="The output directory to write contexts to. If not specified, writes to stdout.")
+                                                type=str,
+                                                help="The output directory to write contexts to. If not specified, writes to stdout.")
+    extract_parser.add_argument("--target", "-T", default=False, 
+                                                action="store_true",
+                                                help="If true, extracts target preceding context instead.")
 
 
     # Arguments for the identification functionality

@@ -39,13 +39,16 @@ def get_ostream(output):
         return open(output, 'r')
 
 
-def get_documents(istream):
+def get_documents(istream, target=False):
     documents = {}
     logger.info("Reading input...")
     for docid, src, tgt in tqdm.tqdm(read_input(istream)):
         if docid not in documents:
             documents[docid] = []
-        documents[docid].append(src)
+        if target:
+            documents[docid].append(tgt)
+        else:
+            documents[docid].append(src)
     return documents 
 
 def read_input(input_stream):
@@ -105,7 +108,7 @@ def extract(args):
 
     annotation = get_test_data(args.annotations)
     ostream = get_ostream(args.output)
-    documents = get_documents(args.input_files)
+    documents = get_documents(args.input_files, target=args.target)
 
     for example in annotation:
 
