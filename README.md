@@ -50,6 +50,13 @@ You have to setup OpenSubtitles for the language you care about. This includes d
 
 # Identify New Examples
 
+Identifying new examples requires more functionality than either extraction or scoring. To install the packages for identification, you will need to install the `ctxpro[annotation]` package:
+
+```
+# There is an incompatability with the networkx versioning, so you will also need to update after installation.
+pip install ctxpro[annotation]; pip install -U networkx
+```
+
 If you would like to apply our rules to new data, it is rather simple. For example, you can easily apply our rules to wmt test sets using `sacrebleu` which will echo documents in the appropriate format.
 
 ```

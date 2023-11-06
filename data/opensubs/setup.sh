@@ -40,7 +40,7 @@ fi
 
 # Create a single consolidated TSV with docid, src, trg
 for srcfile in */*.$src; do 
-    name=$(basename $srcfile .$src)
+    name=$langpair"/"$(echo $srcfile | sed "s/\.$src\$//g")
     trgfile=$(echo $srcfile | perl -pe "s/\.$src\$/.$trg/")
     paste $srcfile $trgfile | $dirname/../../scripts/broadcast -i 0 $name 
 done > $langpair.tsv
