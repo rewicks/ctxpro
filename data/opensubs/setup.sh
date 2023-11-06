@@ -18,7 +18,7 @@ cd $langpair
 file=$langpair.txt.zip
 if [[ ! -s $file ]]; then
     url="http://opus.nlpl.eu/download.php?f=OpenSubtitles2018/$langpair.txt.zip"
-    wget $url -O $file
+    wget --no-check-certificate $url -O $file
     unzip $file
 fi
 
