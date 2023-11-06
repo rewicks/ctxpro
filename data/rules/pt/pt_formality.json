@@ -1,0 +1,98 @@
+{
+  "NOM.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Nom",
+    "english_form": "you",
+    "aligned_form": "tu",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "NOM.FORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Nom",
+    "english_form": "you",
+    "aligned_form": "voc\u00ea",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "ACC.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Acc",
+    "english_form": "you",
+    "aligned_form": "te",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "DISJ.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "-Nom",
+    "english_form": "you",
+    "aligned_form": "ti",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "ACC.FORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Acc",
+    "english_form": "you",
+    "aligned_form": "ihe",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "DISJ.FORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "-Nom",
+    "english_form": "you",
+    "aligned_form": "si",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "DISJ+CON.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "-Nom",
+    "english_form": "you",
+    "aligned_form": "contigo",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "DISJ+CON.FORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "-Nom",
+    "english_form": "you",
+    "aligned_form": "convosco",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  }
+}

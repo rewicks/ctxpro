@@ -1,0 +1,110 @@
+{
+  "NOM.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "Nom",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "\u0442\u044b",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "ACC.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "Acc",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "\u0442\u0435\u0431\u044f",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "DAT.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Dat",
+    "english_form": "you",
+    "aligned_form": "\u0442\u0435\u0431\u0435",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "INST.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Ins",
+    "english_form": "you",
+    "aligned_form": "\u0442\u043e\u0431\u043e\u0439",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "INST.INFORM.SING.ALT": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Ins",
+    "english_form": "you",
+    "aligned_form": "\u0442\u043e\u0431\u043e\u044e",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "NOM.FORM+PLUR": {
+    "type": "pronoun",
+    "english_case": "Nom",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "\u0432\u044b",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "ACC.FORM+PLUR": {
+    "type": "pronoun",
+    "english_case": "Acc",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "\u0432\u0430\u0441",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "DAT.FORM+PLUR": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Dat",
+    "english_form": "you",
+    "aligned_form": "\u0432\u0430\u043c",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "INST.FORM+PLUR": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "Ins",
+    "english_form": "you",
+    "aligned_form": "\u0432\u0430\u043c\u0438",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  }
+}

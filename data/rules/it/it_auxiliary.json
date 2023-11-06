@@ -1,0 +1,26 @@
+{
+  "DO.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "do",
+    "disallowed_aligned_lemmas": [
+      "fare"
+    ]
+  },
+  "WOULD.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "would",
+    "disallowed_aligned_lemmas": [
+      "fare",
+      "potere",
+      "volere"
+    ]
+  },
+  "WILL.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "will",
+    "disallowed_aligned_lemmas": [
+      "fare",
+      "andare"
+    ]
+  }
+}

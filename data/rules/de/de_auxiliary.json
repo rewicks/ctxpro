@@ -1,0 +1,32 @@
+{
+  "DO.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "do",
+    "disallowed_aligned_lemmas": [
+      "machen",
+      "tun",
+      "haben"
+    ]
+  },
+  "WOULD.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "would",
+    "disallowed_aligned_lemmas": [
+      "machen",
+      "k\u00f6nnen",
+      "machen",
+      "tun",
+      "haben"
+    ]
+  },
+  "WILL.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "will",
+    "disallowed_aligned_lemmas": [
+      "machen",
+      "werden",
+      "tun",
+      "haben"
+    ]
+  }
+}

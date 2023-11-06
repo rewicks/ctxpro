@@ -1,1 +1,75 @@
-# ctxpro
+# Introduction
+
+
+## Quick start
+
+`ctxpro` is available via PyPi:
+
+```
+pip install ctxpro
+```
+
+# Scoring
+
+You can use `ctxpro` to evaluation your machine translation outputs.
+
+If using one of our evaluation sets (such as the EN-DE Gender test set shown below), it is a simple call:
+
+```
+# We can read via standard input
+cat translations.gender.en-de.test.txt | ctxpro score -e en-de/gender/test -l de
+
+# Or from a file
+ctxpro score -t translations.gender.en-de.test.txt -e en-de/gender/test -l de
+```
+
+If you want to replicate the scores form our paper, there is a script in `paper/score.sh` which contains these commands for each [mini] test set.
+
+
+# Extraction
+
+You may wish to extract the surrounding contexts to use as input to your machine translation model. We parameterize this as the amount of _preceding_ context that you wish to extract in terms of number of tokens or sentences.
+
+For the evaluation sets we release, we have extracted a default amount of context (up to 10 sentences of 256 words) which are available under `release/inputs/`. The contexts we use for the paper can be found in `paper/inputs`. These contain an "\<eos> " separator, but were removed before passing to DeepL.
+
+If you wish to extract a different context amount, you will need to set up the OpenSubtitles data for your preferred language pair (see section below).
+
+To extract contexts from a specific evaluation set, you may use the following command:
+
+```
+# Extract maximum 5 sentences or 128 tokens
+ctxpro -i data/opensubs/de-en/de-en.tsv -e en-de/gender/test -s 5 -t 128 --joining_string "<eos> "
+```
+
+### Setting up OpenSubtitles
+
+You have to setup OpenSubtitles for the language you care about. This includes downloading, unpacking, and then expanding into a format that organizes the files by year. Run the file `data/opensubtitles/setup.sh` to do this. It takes one argument, the language pair, e.g.,
+
+    cd data/opensubs
+    ./setup.sh de-en
+
+# Identify New Examples
+
+If you would like to apply our rules to new data, it is rather simple. For example, you can easily apply our rules to wmt test sets using `sacrebleu` which will echo documents in the appropriate format.
+
+```
+# Read directly from standard input
+
+sacrebleu -t wmt22 -l en-de --echo docid src ref | ctxpro identify -r DE_GENDER DE_FORMALITY DE_AUXILIARY -t de
+
+
+# Or read from file(s)
+
+sacrebleu -t wmt22 -l en-de --echo docid src ref > wmt22.en-de
+sacrebleu -t wmt21 -l en-de --echo docid src ref > wmt21.en-de
+
+ctxpro -i wmt22.en-de wmt21.en-de -r DE_GENDER DE_FORMALITY DE_AUXILIARY -t de
+```
+
+## Rules
+
+A series of predefined rules are provided as defined in the original paper. They are also located in the `data/rules` folder.
+
+Alternatively, you can create your own. If you follow our structure, you can write a `.json` file (examples in `data/rules`) which the `ctxpro/checkers.py` classes will follow.
+
+For the most flexibility, you can add your own system of criteria to the `ctxpro/checkers.py` file.

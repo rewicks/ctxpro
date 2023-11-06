@@ -1,0 +1,74 @@
+{
+  "NOM.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "Nom",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "tu",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "NOM.FORM+PLUR": {
+    "type": "pronoun",
+    "english_case": "Nom",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "vous",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "ACC.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "Acc",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "te",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "ACC.INFORM.SING.LIAS": {
+    "type": "pronoun",
+    "english_case": "Acc",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "t'",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "ACC.FORM+PLUR": {
+    "type": "pronoun",
+    "english_case": "Acc",
+    "aligned_case": "*",
+    "english_form": "you",
+    "aligned_form": "vous",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  },
+  "DISJ.INFORM.SING": {
+    "type": "pronoun",
+    "english_case": "*",
+    "aligned_case": "-Nom",
+    "english_form": "you",
+    "aligned_form": "toi",
+    "english_coref_pos": "",
+    "aligned_coref_gender": "",
+    "aligned_coref_number": "",
+    "aligned_coref_pos": "",
+    "requires_coref": "false"
+  }
+}

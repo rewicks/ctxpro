@@ -1,0 +1,42 @@
+{
+  "DO.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "do",
+    "disallowed_aligned_lemmas": [
+      "faire",
+      "aller"
+    ]
+  },
+  "MAY.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "may",
+    "disallowed_aligned_lemmas": [
+      "faire",
+      "pouvoir"
+    ]
+  },
+  "MIGHT.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "might",
+    "disallowed_aligned_lemmas": [
+      "faire",
+      "pouvoir"
+    ]
+  },
+  "WOULD.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "would",
+    "disallowed_aligned_lemmas": [
+      "faire",
+      "pouvoir"
+    ]
+  },
+  "WILL.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "will",
+    "disallowed_aligned_lemmas": [
+      "aller",
+      "faire"
+    ]
+  }
+}

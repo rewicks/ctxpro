@@ -1,0 +1,19 @@
+{
+  "DO.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "do",
+    "disallowed_aligned_lemmas": [
+      "\u0414\u0435\u043b\u0430\u0442\u044c"
+    ]
+  },
+  "WOULD.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "would",
+    "disallowed_aligned_lemmas": []
+  },
+  "WILL.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "will",
+    "disallowed_aligned_lemmas": []
+  }
+}

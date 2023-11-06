@@ -1,0 +1,155 @@
+absl-py==1.4.0
+aiohttp==3.8.4
+aiosignal==1.3.1
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+async-timeout==4.0.2
+attrs==23.1.0
+Automat==22.10.0
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+blis==0.7.9
+catalogue==2.0.8
+certifi==2023.5.7
+charset-normalizer==3.1.0
+click==8.1.3
+cmake==3.26.3
+colorama==0.4.6
+comm @ file:///croot/comm_1671231121260/work
+confection==0.0.4
+constantly==15.1.0
+contourpy==1.0.7
+cycler==0.11.0
+cymem==2.0.7
+datasets==2.12.0
+DAWG-Python==0.7.2
+de-dep-news-trf @ https://github.com/explosion/spacy-models/releases/download/de_dep_news_trf-3.5.0/de_dep_news_trf-3.5.0-py3-none-any.whl
+debugpy @ file:///tmp/build/80754af9/debugpy_1637091799509/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+deepl==1.15.0
+dill==0.3.6
+docopt==0.6.2
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
+en-core-web-trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.5.0/en_core_web_trf-3.5.0-py3-none-any.whl
+entmax==1.1
+es-dep-news-trf @ https://github.com/explosion/spacy-models/releases/download/es_dep_news_trf-3.5.0/es_dep_news_trf-3.5.0-py3-none-any.whl
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+fastcoref==2.1.6
+filelock==3.12.0
+fonttools==4.39.4
+fr-dep-news-trf @ https://github.com/explosion/spacy-models/releases/download/fr_dep_news_trf-3.5.0/fr_dep_news_trf-3.5.0-py3-none-any.whl
+frozenlist==1.3.3
+fsspec==2023.5.0
+huggingface-hub==0.12.1
+hyperlink==21.0.0
+idna==3.4
+importlib-metadata @ file:///croot/importlib-metadata_1678997070253/work
+importlib-resources==5.12.0
+incremental==22.10.0
+ipykernel @ file:///croot/ipykernel_1671488378391/work
+ipython @ file:///croot/ipython_1680701871216/work
+it-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/it_core_news_lg-3.5.0/it_core_news_lg-3.5.0-py3-none-any.whl
+jedi @ file:///tmp/build/80754af9/jedi_1644297102865/work
+Jinja2==3.1.2
+joblib==1.2.0
+jsonargparse==3.13.1
+jupyter_client @ file:///croot/jupyter_client_1680171862562/work
+jupyter_core @ file:///croot/jupyter_core_1679906564508/work
+kiwisolver==1.4.4
+langcodes==3.3.0
+lightning-utilities==0.8.0
+lit==16.0.5
+lxml==4.9.2
+MarkupSafe==2.1.2
+matplotlib==3.7.1
+matplotlib-inline @ file:///opt/conda/conda-bld/matplotlib-inline_1662014470464/work
+mpmath==1.3.0
+mt-metrics-eval @ file:///export/b11/rwicks/mt-metrics-eval
+multidict==6.0.4
+multiprocess==0.70.14
+murmurhash==1.0.9
+nest-asyncio @ file:///croot/nest-asyncio_1672387112409/work
+networkx==3.0
+numpy==1.24.3
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cufft-cu11==10.9.0.58
+nvidia-curand-cu11==10.2.10.91
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-nccl-cu11==2.14.3
+nvidia-nvtx-cu11==11.7.91
+packaging==23.1
+pandas==1.5.3
+parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+pathy==0.10.1
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.5.0
+pl-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/pl_core_news_lg-3.5.0/pl_core_news_lg-3.5.0-py3-none-any.whl
+platformdirs @ file:///opt/conda/conda-bld/platformdirs_1662711380096/work
+portalocker==2.7.0
+preshed==3.0.8
+prompt-toolkit @ file:///croot/prompt-toolkit_1672387306916/work
+protobuf==3.20.3
+psutil @ file:///opt/conda/conda-bld/psutil_1656431268089/work
+pt-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_lg-3.5.0/pt_core_news_lg-3.5.0-py3-none-any.whl
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+pyarrow==12.0.0
+pydantic==1.10.8
+pyDeprecate==0.3.2
+Pygments @ file:///croot/pygments_1684279966437/work
+pymorphy3==1.2.0
+pymorphy3-dicts-ru==2.4.417150.4580142
+pyparsing==3.0.9
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytorch-lightning==1.9.5
+pytz==2023.3
+PyYAML==6.0
+pyzmq @ file:///croot/pyzmq_1682697643292/work
+regex==2023.5.5
+requests==2.31.0
+responses==0.18.0
+ru-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/ru_core_news_lg-3.5.0/ru_core_news_lg-3.5.0-py3-none-any.whl
+sacrebleu==2.3.1
+scikit-learn==1.2.2
+scipy==1.10.1
+seaborn==0.12.2
+sentence-splitter==1.4
+sentencepiece==0.1.99
+simalign==0.3
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+smart-open==6.3.0
+spacy==3.5.3
+spacy-alignments==0.9.0
+spacy-legacy==3.0.12
+spacy-loggers==1.0.4
+spacy-transformers==1.2.4
+srsly==2.4.6
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+sympy==1.12
+tabulate==0.9.0
+thinc==8.1.10
+threadpoolctl==3.1.0
+tokenizers==0.13.3
+torch==2.0.1
+torchmetrics==0.8.2
+tornado @ file:///opt/conda/conda-bld/tornado_1662061693373/work
+tqdm==4.65.0
+traitlets @ file:///croot/traitlets_1671143879854/work
+transformers==4.29.0
+triton==2.0.0
+Twisted==22.10.0
+typer==0.7.0
+typing_extensions==4.6.2
+tzdata==2023.3
+unbabel-comet==2.0.1
+urllib3==2.0.2
+wasabi==1.1.1
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+xxhash==3.2.0
+yarl==1.9.2
+zipp @ file:///croot/zipp_1672387121353/work
+zope.interface==6.0

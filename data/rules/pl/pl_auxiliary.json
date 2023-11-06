@@ -1,0 +1,32 @@
+{
+  "DO.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "do",
+    "disallowed_aligned_lemmas": [
+      "robi\u0107"
+    ]
+  },
+  "WOULD.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "would",
+    "disallowed_aligned_lemmas": [
+      "robi\u0107",
+      "by by\u0107",
+      "by\u0107",
+      "by",
+      "m\u00f3c"
+    ]
+  },
+  "WILL.ELL": {
+    "type": "do_ellipsis",
+    "english_lemma": "will",
+    "disallowed_aligned_lemmas": [
+      "robi\u0107",
+      "by\u0107",
+      "by by\u0107",
+      "by",
+      "m\u00f3c",
+      "i\u015b\u0107"
+    ]
+  }
+}

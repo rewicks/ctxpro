@@ -1,0 +1,26 @@
+{
+  "NOM.ELL": {
+    "type": "inflection",
+    "case": "Nom"
+  },
+  "GEN.ELL": {
+    "type": "inflection",
+    "case": "Gen"
+  },
+  "LOC.ELL": {
+    "type": "inflection",
+    "case": "Loc"
+  },
+  "INS.ELL": {
+    "type": "inflection",
+    "case": "Ins"
+  },
+  "DAT.ELL": {
+    "type": "inflection",
+    "case": "Dat"
+  },
+  "ACC.ELL": {
+    "type": "inflection",
+    "case": "Acc"
+  }
+}
