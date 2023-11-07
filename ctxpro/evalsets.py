@@ -678,21 +678,21 @@ TESTSETS = {
         "info": "A test set for English-Polish translation of inflections.",
         "destination": "inflection.opensubtitles.en-pl.test.json",
         "date": "01 Nov 2023",
-        "md5": "c12f2fec8c359204d2d08ad7262ba997"
+        "md5": "c24dd2fa86eb777b6efe12add369bf36"
     },
     "en-pl/inflection/devtest":{
         "source": "https://github.com/rewicks/ctxpro/raw/main/release/evalsets/inflection.opensubtitles.en-pl.devtest.json",
         "info": "A devtest set for English-Polish translation of inflections.",
         "destination": "inflection.opensubtitles.en-pl.devtest.json",
         "date": "01 Nov 2023",
-        "md5": "2b8c89719f7555a973e7c36d01f75a86"
+        "md5": "2ff1cb38ecaa1d658b9d20e8bd1247cf"
     },
     "en-pl/inflection/dev": {
         "source": "https://github.com/rewicks/ctxpro/raw/main/release/evalsets/inflection.opensubtitles.en-pl.dev.json",
         "info": "A dev set for English-Polish translation of inflections.",
         "destination": "inflection.opensubtitles.en-pl.dev.json",
         "date": "01 Nov 2023",
-        "md5": "5b3a55c74e457e5834f8289a6f681edb"
+        "md5": "e3d35205c47c6c4e706a3aa15524bbe4"
     },
 
 }
@@ -708,10 +708,10 @@ def meets_criteria(name, category, language_pair, split):
     return True
 
 def list_test_sets(category=None, language_pair=None, split=None):
-    print("Available evaluation sets:")
+    print("Available evaluation sets:", file=sys.stderr)
     for name, test_set in TESTSETS.items():
         if meets_criteria(name, category, language_pair, split):
-            print(f"\t- {name}: {test_set['info']}")
+            print(f"\t- {name}: {test_set['info']}", file=sys.stderr)
 
 def get_test_data(test_set_name):
     if os.path.exists(test_set_name):

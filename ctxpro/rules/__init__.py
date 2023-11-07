@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+
 from . import de, es, fr, it, pl, pt, ru
 
 RULES = {
@@ -45,7 +47,7 @@ def list_rulesets(args):
     """
         Main entry point
     """
-    print(f"Available rule sets by name:")
+    print(f"Available rule sets by name:", file=sys.stderr)
     for name, ruleset in RULES.items():
         if meets_criteria(name, args.language):
-            print(f"\t- {name}")
+            print(f"\t- {name}", file=sys.stderr)

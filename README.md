@@ -48,15 +48,15 @@ You have to setup OpenSubtitles for the language you care about. This includes d
     cd data/opensubs
     ./setup.sh de-en
 
-Note that OpenSubtitles does the language-pair in alphabetical order, so the language pairs we support are `de-en`, `en-es`, `en-fr`, `en-it`, `en-pl`, `en-pt`, and `en-ru`. We assume an English source, so you may have to reverse the source and target columns in `de-en.tsv` (i.e. with something like `awk -F'\t' '{print $1 $3 $2}'`)
+Note that OpenSubtitles does the language-pair in alphabetical order, so the language pairs we support are `de-en`, `en-es`, `en-fr`, `en-it`, `en-pl`, `en-pt`, and `en-ru`. We assume an English source, so you may have to reverse the source and target columns in `de-en.tsv` (i.e. with something like `awk -F'\t' '{print $1 "\t" $3 "\t" $2}'`) when piping into `ctxpro`.
 
 # Identify New Examples
 
-Identifying new examples requires more functionality than either extraction or scoring. To install the packages for identification, you will need to install the `ctxpro[annotation]` package:
+Identifying new examples requires more functionality than either extraction or scoring. To install the packages for identification, you will need to install the `ctxpro[identify]` package:
 
 ```
 # There is an incompatability with the networkx versioning, so you will also need to update after installation.
-pip install ctxpro[annotation]; pip install -U networkx
+pip install ctxpro[identify]; pip install -U networkx
 ```
 
 If you would like to apply our rules to new data, it is rather simple. For example, you can easily apply our rules to wmt test sets using `sacrebleu` which will echo documents in the appropriate format.
