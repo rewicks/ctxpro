@@ -1,5 +1,12 @@
 # Introduction
 
+Machine translation research is primarily focused on the sentence-level paradigm. In efforts to push the field towards translation _in context_, we release `ctxpro` which can extract parallel sentences which require additional document-context to translate.
+
+Further, we release evaluation sets (`release/jsons`) as a resource to the community.
+
+For more information, please read our paper:
+ - [Rachel Wicks and Matt Post (2023):
+   Identifying Context-Dependent Translations for Evaluation Set Production](https://arxiv.org/abs/2311.02321) In _Proceedings of WMT 2023_.
 
 ## Quick start
 
