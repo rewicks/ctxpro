@@ -656,21 +656,21 @@ TESTSETS = {
         "info": "A test set for English-Russian translation of inflections.",
         "destination": "inflection.opensubtitles.en-ru.test.json",
         "date": "01 Nov 2023",
-        "md5": "c24dd2fa86eb777b6efe12add369bf36"
+        "md5": "5b3a55c74e457e5834f8289a6f681edb"
     },
     "en-ru/inflection/devtest":{
         "source": "https://github.com/rewicks/ctxpro/raw/main/release/evalsets/inflection.opensubtitles.en-ru.devtest.json",
         "info": "A devtest set for English-Russian translation of inflections.",
         "destination": "inflection.opensubtitles.en-ru.devtest.json",
         "date": "01 Nov 2023",
-        "md5": "2ff1cb38ecaa1d658b9d20e8bd1247cf"
+        "md5": "2b8c89719f7555a973e7c36d01f75a86"
     },
     "en-ru/inflection/dev": {
         "source": "https://github.com/rewicks/ctxpro/raw/main/release/evalsets/inflection.opensubtitles.en-ru.dev.json",
         "info": "A dev set for English-Russian translation of inflections.",
         "destination": "inflection.opensubtitles.en-ru.dev.json",
         "date": "01 Nov 2023",
-        "md5": "e3d35205c47c6c4e706a3aa15524bbe4"
+        "md5": "c12f2fec8c359204d2d08ad7262ba997"
     },
 
     "en-pl/inflection/test": {
