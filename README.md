@@ -89,3 +89,7 @@ A series of predefined rules are provided as defined in the original paper. They
 Alternatively, you can create your own. If you follow our structure, you can write a `.json` file (examples in `data/rules`) which the `ctxpro/checkers.py` classes will follow.
 
 For the most flexibility, you can add your own system of criteria to the `ctxpro/checkers.py` file.
+
+### Animacy
+
+As you may notice, the extract pipeline assumes _English_ as the source. Animacy is the sole category here where the ambiguity exists when translating _into_ English as the target language. In our paper, we leverage the fact that the Gender ambiguity out-of-English is parallel to the Animacy ambiguity into-English. To identify Animacy ambiguities, you can extract the Gender examples and reverse the language direction in the resulting `.json` file with the script in `scripts/reverse.py`. An example showing the reverses we made to create the evaluation sets is in `scripts/reverse.sh.`
