@@ -208,7 +208,7 @@ TESTSETS = {
     "en-es/auxiliary/test": {
         "source": "https://github.com/rewicks/ctxpro/raw/main/release/evalsets/auxiliary.opensubtitles.en-es.test.json",
         "info": "A test set for English-Spanish translation of auxiliary verbs.",
-        "destination": "formality.opensubtitles.en-es.test.json",
+        "destination": "auxiliary.opensubtitles.en-es.test.json",
         "date": "01 Nov 2023",
         "md5": "ad5bd102b394064f5e5fc6e4ed4301e4"
     },
