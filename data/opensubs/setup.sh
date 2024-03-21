@@ -2,7 +2,10 @@
 
 # Downloads OpenSubtitles, and then unpacks into an expected directory structure.
 #
-# Usage: setup.sh en-de
+# Usage: setup.sh de-en
+#
+# where de-en is the language pair. Because these are parallel, only one direction
+# exists (the pair is sorted alphabetically, so en-fr, not fr-en).
 
 set -eu
 
@@ -17,7 +20,7 @@ cd $langpair
 # download OpenSubtitles 2018 EN-DE and unzip
 file=$langpair.txt.zip
 if [[ ! -s $file ]]; then
-    url="http://opus.nlpl.eu/download.php?f=OpenSubtitles2018/$langpair.txt.zip"
+    url="https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2018/moses/$langpair.txt.zip"
     wget --no-check-certificate $url -O $file
     unzip $file
 fi
