@@ -38,7 +38,7 @@ def parse_args():
 
     # Arguments for the scoring functionality
     score_parser = subparsers.add_parser("score", help="Score translations against an evaluation set")
-    score_parser.add_argument("--translations", "-t", type=str,
+    score_parser.add_argument("--translations", "-t", type=str, nargs="*",
                                                 default=None,
                                                 help="Translation outputs, one per line. If None, will read from stdin.")
     score_parser.add_argument("--eval-set", "-e", required=True,
@@ -47,6 +47,15 @@ def parse_args():
     score_parser.add_argument("--lang", "-l", required=True,
                                             type=str,
                                             help="ISO (639-1) code for [target] language (used for sentence splitting).")
+    score_parser.add_argument("--paired-bs", "-pbs", default=False,
+                                            action="store_true",
+                                            help="Provides paired boostrapping scores")
+    score_parser.add_argument("--n_resamples", "-n", default=1000,
+                                            type=int,
+                                            help="How many times to resample during bootstrapping")
+    score_parser.add_argument("--k_subsamples", "-k", default=1000,
+                                            type=int,
+                                            help="How large the subsample population is during resampling for boostrapping")
     score_parser.add_argument("--complete", '-c', default=False,
                                             action="store_true",
                                             help="Full output in tsv format.")
